@@ -1,0 +1,13 @@
+<?php ... ?> --> indica o início e o fim de um bloco de código PHP inserido em um arquivo.
+
+// ou # ou /* ... */ --> Comentario
+
+echo ... ; --> é uma construção usada para exibir dados na saída, geralmente texto ou variáveis na tela.
+
+echo --> com aspas simples imprime o texto literalmente, enquanto com aspas duplas permite a interpretação de variáveis e caracteres especiais
+
+$variavel = ... ; --> serve para declarar e atribuir um valor a uma variável.
+
+
+
+
