@@ -1,13 +1,14 @@
-<?php ... ?> --> indica o início e o fim de um bloco de código PHP inserido em um arquivo.
-
-// ou # ou /* ... */ --> Comentario
-
-echo ... ; --> é uma construção usada para exibir dados na saída, geralmente texto ou variáveis na tela.
-
-echo --> com aspas simples imprime o texto literalmente, enquanto com aspas duplas permite a interpretação de variáveis e caracteres especiais
-
-$variavel = ... ; --> serve para declarar e atribuir um valor a uma variável.
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <?php
+            $variavel = 18;
             //Condicional
 
             if ($variavel == 18) {
@@ -17,19 +18,21 @@ $variavel = ... ; --> serve para declarar e atribuir um valor a uma variável.
             } else {
                 echo "Maior de idade";
             }
+            echo "<br>";
 
             //Repetição While
             while ($variavel >= 15) {
                 echo "Valor: $variavel <br>";
                 $variavel--;
             }
+            echo "<br>";
 
             //Repetição FOR
 
             for ($i = 1; $i <= 5; $i++) {
                 echo "Valor: $i <br>";
             }
-
+            echo "<br>";
 
             //Declaração de arrays
 
@@ -39,11 +42,21 @@ $variavel = ... ; --> serve para declarar e atribuir um valor a uma variável.
             $array2[1] = "Banana";
             $array2[2] = "cenoura";
 
-
             //Estrutura de repetição para arrays
 
             foreach ($array as $item ) {
                 echo "valor: $item <br>";
             }
+            echo "<br>";
 
-var_dump( ... ); --> é uma função do PHP que exibe o tipo, tamanho e valor detalhado de uma ou mais variáveis, útil para depuração.
+            $matriz = array(
+                array("Flamengo", "Vasco", "Fluminense", "Botafogo"),
+                array("Santos", "São Paulo", "Palmeiras", "Corintias")
+            );
+
+            var_dump($matriz);
+
+        ?>
+    </h1>
+</body>
+</html>
